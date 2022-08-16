@@ -32,6 +32,10 @@
             "result": {"bar": "bar"}
          },
          {
+            "expression": "foo.{bar}",
+            "result": {"bar": "bar"}
+         },
+         {
             "expression": "foo.{\"bar\": bar}",
             "result": {"bar": "bar"}
          },
@@ -41,6 +45,10 @@
          },
          {
             "expression": "foo.{bar: bar, baz: baz}",
+            "result": {"bar": "bar", "baz": "baz"}
+         },
+         {
+            "expression": "foo.{bar, baz}",
             "result": {"bar": "bar", "baz": "baz"}
          },
          {
@@ -68,11 +76,21 @@
             "result": {"noexist": null, "alsonoexist": null}
          },
          {
+            "expression": "foo.{noexist, alsonoexist}",
+            "result": {"noexist": null, "alsonoexist": null}
+         },
+         {
             "expression": "foo.badkey.{nokey: nokey, alsonokey: alsonokey}",
             "result": null
          },
          {
             "expression": "foo.nested.*.{a: a,b: b}",
+            "result": [{"a": "first", "b": "second"},
+                       {"a": "first", "b": "second"},
+                       {"a": "first", "b": "second"}]
+         },
+         {
+            "expression": "foo.nested.*.{a,b}",
             "result": [{"a": "first", "b": "second"},
                        {"a": "first", "b": "second"},
                        {"a": "first", "b": "second"}]
@@ -133,6 +151,10 @@
     "cases": [
          {
             "expression": "foo.{bar:bar,baz:baz}",
+            "result": {"bar": 1, "baz": [2, 3, 4]}
+         },
+         {
+            "expression": "foo.{bar,baz}",
             "result": {"bar": 1, "baz": [2, 3, 4]}
          },
          {
