@@ -128,7 +128,7 @@
       "result": {"baz": "one"}
     },
     {
-      "expression": "`null` | [@]",
+      "expression": "`null`|[@]",
       "result": [ null ]
     }
   ]
