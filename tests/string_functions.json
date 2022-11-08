@@ -110,7 +110,7 @@
 
       },
       {
-        "expression": "pad_left('string', '1.4')",
+        "expression": "pad_left('string', `1.4`)",
         "error": "invalid-value"
 
       },
