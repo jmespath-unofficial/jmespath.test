@@ -79,6 +79,10 @@
                 "result": 9
             },
             {
+              "expression": "`42 `",
+              "result": 42
+            },
+            {
                 "comment": "Escaping a backtick in quotes",
                 "expression": "`\"foo\\`bar\"`",
                 "result": "foo`bar"
