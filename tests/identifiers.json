@@ -1373,5 +1373,18 @@
                 "result": true
             }
         ]
+    },
+    {
+        "given": { "": "foo" },
+        "cases": [
+            {
+                "expression": "\"\"",
+                "result": "foo"
+            },
+            {
+                "expression": "@ | \"\"",
+                "result": "foo"
+            }
+        ]
     }
 ]
