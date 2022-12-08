@@ -28,11 +28,6 @@
         "result": "✓"
       },
       {
-        "comment": "Double quote in literal",
-        "expression": "`foo\\\"bar`",
-        "result": "foo\"bar"
-      },
-      {
         "expression": "`1\\``",
         "result": "1`"
       },
