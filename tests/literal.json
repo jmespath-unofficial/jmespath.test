@@ -216,19 +216,19 @@
         "result": "\\u03a6"
       },
       {
-        "comment": "Can escape the single quote",
+        "comment": "Can escape single quote",
         "expression": "'foo\\'bar'",
         "result": "foo'bar"
       },
       {
-        "comment": "Backslash not followed by single quote is treated as any other character",
-        "expression": "'\\z'",
-        "result": "\\z"
-      },
-      {
-        "comment": "Backslash not followed by single quote is treated as any other character",
+        "comment": "Can escape backslash",
         "expression": "'\\\\'",
         "result": "\\"
+      },
+      {
+        "comment": "Backslash not followed by single quote or backslash is treated as any other character",
+        "expression": "'\\z'",
+        "result": "\\z"
       }
     ]
   }
