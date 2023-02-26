@@ -135,6 +135,7 @@ class ComplianceTestRunner(object):
 
     def _run_test(self, test_case):
         command = shlex.split(self.jp_executable)
+        command.append("--")
         command.append(test_case['expression'])
         try:
             process = subprocess.Popen(command, stdout=subprocess.PIPE,
