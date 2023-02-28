@@ -36,6 +36,7 @@ Each JMESPath test case can have the following keys:
   * ``invalid-type`` - Invalid argument type for a function.
   * ``invalid-value`` - Semantically incorrect value (used in slice tests)
   * ``unknown-function`` - Attempting to invoke an unknown function.
+  * ``not-a-number`` - While evaluating arithmetic expressions.
 
 * ``bench`` - If the case is a benchmark, ``bench`` contains the type of
   benchmark. Available ``bench`` types are as follows:
