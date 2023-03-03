@@ -164,6 +164,11 @@
 				"description": "Precedence of lexical vars from current object",
 				"expression": "precedence.let({variable: variable}, &a.let({variable: variable}, &b.let({variable: variable}, &c.let({variable: `\"override\"`}, &variable))))",
 				"result": "fourth"
+			},
+			{
+				"description": "Scopes must be discarded after evaluation",
+				"expression": "let({root: 'root'}, &root).root",
+				"result": null
 			}
 		]
 	},
