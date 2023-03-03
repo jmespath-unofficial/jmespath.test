@@ -199,6 +199,10 @@
 			{
 				"expression": "states[?name==$.first_choice].cities[]",
 				"result": ["Seattle", "Bellevue", "Olympia"]
+			},
+			{
+				"expression": "first_choice.\"$\"|states",
+				"result": null
 			}
 		]
 	}
