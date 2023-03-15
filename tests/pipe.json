@@ -130,6 +130,10 @@
     {
       "expression": "`null`|[@]",
       "result": [ null ]
+    },
+    {
+      "expression": "`null`|{foo: @}",
+      "result": {"foo": null }
     }
   ]
 }]
