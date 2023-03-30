@@ -1,7 +1,7 @@
 JMESPath Compliance Tests
 =========================
 
-This repo contains a suite of JMESPath compliance tests.  JMESPath
+This repo contains a suite of JMESPath compliance tests.  JMESPath Community
 implementations can use these tests in order to verify their implementation
 adheres to the JMESPath spec.
 
