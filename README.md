@@ -12,7 +12,7 @@ However, in some rare circumstances, some differences may be observed. This para
 
 |Category|Compliance|Result|JMESPath.org Result|Description
 |---|---|---|---|---
-|[literal.json](https://github.com/jmespath/jmespath.test/blob/53abcc37901891cf4308fcd910eab287416c4609/tests/literal.json#L193-L197)|`` '\\' ``| `` "\" `` | `` "\\" `` | JMESPath Community `raw-string` supports escaping both `` ` `` (backtick) and `` \ `` (backslash) characters, whereas JMESPath.org can only escape backticks.
+|[literal.json](https://github.com/jmespath/jmespath.test/blob/53abcc37901891cf4308fcd910eab287416c4609/tests/literal.json#L193-L197)|`` '\\' ``| `` "\" `` | `` "\\" `` | JMESPath Community `raw-string` supports escaping both `` ' `` (single quotk) and `` \ `` (backslash) characters, whereas JMESPath.org can only escape single quotes
 
 ## Test Organization
 
