@@ -13,6 +13,7 @@ However, in some rare circumstances, some differences may be observed. This para
 |Category|Compliance|Result|JMESPath.org Result|Description
 |---|---|---|---|---
 |[literal.json](https://github.com/jmespath/jmespath.test/blob/53abcc37901891cf4308fcd910eab287416c4609/tests/literal.json#L193-L197)|`` '\\' ``| `` "\" `` | `` "\\" `` | JMESPath Community `raw-string` supports escaping both `` ' `` (single quote) and `` \ `` (backslash) characters, whereas JMESPath.org can only escape single quotes
+|[pipe.json](https://github.com/jmespath-community/jmespath.test/blob/304b287a9537673227c2e300a34ff8e4757579c5/tests/pipe.json#L131-L136)| `` `null`\|[@] ``| `` [null] `` | `` null `` | JMESPath Community lets a `null` left-hand side of a `pipe-expression` propagate to its right-hand side, whereas JMESPath.og behaves shortcuts and does not evaluate the right-hand side if the left-hand side result is `null`.
 
 ## Test Organization
 
