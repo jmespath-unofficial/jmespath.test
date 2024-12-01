@@ -54,7 +54,7 @@ Each JMESPath test case can have the following keys:
     benchmark. Available `bench` types are as follows:
     -   `parse` - Benchmark only the parsing of an expression.
     -   `interpret` - Benchmark only the interpreting of an expression.
-    -   `full` - Benchmark both parsing and interepreting an expression.
+    -   `full` - Benchmark both parsing and interpreting an expression.
 -   `comment` - An optional comment containing a description of the
     specific test case.
 
@@ -69,7 +69,7 @@ when the expression is compiled. If an implementation does not have a
 separate compilation step this won\'t even be possible. Similar for type
 errors, implementations are free to check for type errors during
 compilation or at run time (when the parsed expression is evaluated). As
-long as an implementation can detect that this error occured at any
+long as an implementation can detect that this error occurred at any
 point during the evaluation of a JMESPath expression, this is considered
 sufficient.
 
@@ -108,7 +108,7 @@ available test framework to generate test cases. The `jp-compliance`
 tool takes the name of a jmespath executable and will evaluate all the
 compliance tests using this provided executable. This way all that\'s
 needed to verify your JMESPath implementation is for you to write a
-basic exectuable. This executable must have the following interface:
+basic executable. This executable must have the following interface:
 
 -   Accept the input JSON data on stdin.
 -   Accept the jmespath expression as an argument.
