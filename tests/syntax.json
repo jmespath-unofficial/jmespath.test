@@ -416,9 +416,9 @@
         "error": "syntax"
       },
       {
-        "comment": "Not a key-value pair",
+        "comment": "Valid single-key multi-select hash extraction",
         "expression": "a.{foo}",
-        "error": "syntax"
+        "result": null
       },
       {
         "comment": "Missing value",
