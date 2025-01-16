@@ -1,0 +1,47 @@
+[
+	{
+		"given": {
+			"true": true,
+			"false": false,
+			"foo": "foo",
+			"bar": "bar",
+			"baz": "baz",
+			"qux": "qux",
+			"quux": "quux"
+		},
+		"cases": [
+			{
+				"expression": "true ? foo : bar",
+				"result": "foo"
+			},
+			{
+				"expression": "false ? foo : bar",
+				"result": "bar"
+			},
+			{
+				"expression": "`null` ? foo : bar",
+				"result": "bar"
+			},
+			{
+				"expression": "`[]` ? foo : bar",
+				"result": "bar"
+			},
+			{
+				"expression": "`{}` ? foo : bar",
+				"result": "bar"
+			},
+			{
+				"expression": "'' ? foo : bar",
+				"result": "bar"
+			},
+			{
+				"expression": "false ? foo | bar | @ : baz",
+				"result": "baz"
+			},
+			{
+				"expression": "foo ? bar ? baz : qux : quux",
+				"result": "baz"
+			}
+		]
+	}
+]
