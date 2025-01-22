@@ -7,7 +7,9 @@
 			"bar": "bar",
 			"baz": "baz",
 			"qux": "qux",
-			"quux": "quux"
+			"quux": "quux",
+			"two": 2,
+			"fourty": 40
 		},
 		"cases": [
 			{
@@ -35,12 +37,33 @@
 				"result": "bar"
 			},
 			{
+				"comment": "chained ternaries",
+				"expression": "foo ? bar ? baz : qux : quux",
+				"result": "baz"
+			},
+			{
+				"comment": "precedence with pipes",
 				"expression": "false ? foo | bar | @ : baz",
 				"result": "baz"
 			},
 			{
-				"expression": "foo ? bar ? baz : qux : quux",
-				"result": "baz"
+				"comment": "precedence with arithmetics",
+				"expression": "foo ? fourty + two : `false`",
+				"result": 42
+			}
+		]
+	},
+	{
+		"given": {
+			"array": [
+				"true",
+				"false",
+				"true"
+			]
+		},
+		"cases": [
+			{
+				"expression": "array[*]"
 			}
 		]
 	}
